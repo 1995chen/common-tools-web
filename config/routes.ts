@@ -52,10 +52,10 @@ export default [
     icon: 'code',
     routes: [
       {
-        path: '/develop/json',
-        name: 'json',
+        path: '/develop/format',
+        name: 'format',
         icon: 'smile',
-        component: './Develop/json',
+        component: './Develop/format',
       },
     ],
   },

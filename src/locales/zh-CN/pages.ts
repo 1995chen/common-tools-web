@@ -1,6 +1,15 @@
 export default {
-  'pages.develop.json.format': '格式化',
-  'pages.develop.json.invalid_json': '非法的json',
+  /**
+   * 自定义翻译----开始
+   */
+  'pages.develop.format.success': '格式化成功',
+  'pages.develop.format.json': '格式化Json',
+  'pages.develop.format.invalid_json': '非法的json',
+  'pages.develop.format.yaml': '格式化Yaml',
+  'pages.develop.format.invalid_yaml': '非法的yaml',
+  /**
+   * 自定义翻译----结束
+   */
   'pages.layouts.userLayout.title': 'Ant Design 是西湖区最具影响力的 Web 设计规范',
   'pages.login.accountLogin.tab': '账户密码登录',
   'pages.login.accountLogin.errorMessage': '错误的用户名和密码（admin/ant.design)',
