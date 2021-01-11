@@ -2,11 +2,19 @@ export default {
   /**
    * 自定义翻译----开始
    */
+  'pages.develop.format.decrypt': '<<< 解密base64',
+  'pages.develop.crypto.decrypt.failed': 'base64解密失败',
+  'pages.develop.crypto.decrypt.success': 'base64解密成功',
+  'pages.develop.crypto.encryption': '加密base64 >>>',
+  'pages.develop.crypto.encryption.failed': 'base64加密失败',
+  'pages.develop.crypto.encryption.success': 'base64加密成功',
   'pages.develop.format.success': '格式化成功',
   'pages.develop.format.json': '格式化Json',
   'pages.develop.format.invalid_json': '非法的json',
   'pages.develop.format.yaml': '格式化Yaml',
   'pages.develop.format.invalid_yaml': '非法的yaml',
+  'pages.develop.crypto.stringBase64': 'Base64字符串',
+  'pages.develop.crypto.imageBase64': 'Base64图片',
   /**
    * 自定义翻译----结束
    */

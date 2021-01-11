@@ -1,25 +1,25 @@
 import { PageContainer } from '@ant-design/pro-layout';
 import ProCard from '@ant-design/pro-card';
-import JsonFormat from './json';
-import YamlFormat from './yaml';
+import StringBase64 from './stringBase64';
+import ImageBase64 from './imageBase64';
 import React, { useState } from 'react';
 import { useIntl } from 'umi';
 
-const Format: React.ReactNode = () => {
+const Crypto: React.ReactNode = () => {
   const intl = useIntl();
-  const [tab, setTab] = useState('json');
+  const [tab, setTab] = useState('stringBase64');
 
   const getTag = () => {
-    let card = <JsonFormat />;
+    let card = <StringBase64 />;
     switch (tab) {
-      case 'json':
-        card = <JsonFormat />;
+      case 'stringBase64':
+        card = <StringBase64 />;
         break;
-      case 'yaml':
-        card = <YamlFormat />;
+      case 'imageBase64':
+        card = <ImageBase64 />;
         break;
       default:
-        card = <JsonFormat />;
+        card = <StringBase64 />;
         break;
     }
     return card;
@@ -29,17 +29,17 @@ const Format: React.ReactNode = () => {
     <PageContainer
       tabList={[
         {
-          key: 'json',
+          key: 'stringBase64',
           tab: intl.formatMessage({
-            id: 'pages.develop.format.json',
-            defaultMessage: '格式化',
+            id: 'pages.develop.crypto.stringBase64',
+            defaultMessage: 'BASE64',
           }),
         },
         {
-          key: 'yaml',
+          key: 'imageBase64',
           tab: intl.formatMessage({
-            id: 'pages.develop.format.yaml',
-            defaultMessage: '格式化',
+            id: 'pages.develop.crypto.imageBase64',
+            defaultMessage: '图片/BASE64转换',
           }),
         },
       ]}
@@ -55,4 +55,4 @@ const Format: React.ReactNode = () => {
   );
 };
 
-export default Format;
+export default Crypto;

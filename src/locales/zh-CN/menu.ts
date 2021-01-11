@@ -5,6 +5,7 @@ export default {
    */
   'menu.develop': '开发工具集',
   'menu.develop.format': '字符串格式化',
+  'menu.develop.crypto': '加密解密',
   /**
    * 自定义的翻译----------------结束
    */

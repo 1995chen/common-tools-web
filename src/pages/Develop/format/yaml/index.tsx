@@ -6,7 +6,7 @@ import YAML from 'yaml';
 
 const { TextArea } = Input;
 
-export default () => {
+const YamlFormat: React.FC = () => {
   const intl = useIntl();
   const [content, setContent] = useState('');
 
@@ -51,3 +51,5 @@ export default () => {
     </ProCard>
   );
 };
+
+export default YamlFormat;

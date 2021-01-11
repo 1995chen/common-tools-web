@@ -5,7 +5,7 @@ import React, { useState } from 'react';
 
 const { TextArea } = Input;
 
-export default () => {
+const JsonFormat: React.FC = () => {
   const intl = useIntl();
   const [content, setContent] = useState('');
 
@@ -50,3 +50,5 @@ export default () => {
     </ProCard>
   );
 };
+
+export default JsonFormat;
